@@ -25,7 +25,6 @@ class Fan(Switchable):
         print("Fan turned off")
 
 class EletricalPowerSwitch:
-    
     def __init__(self, client: Switchable) -> None:
         self.client = client
         self.on = False
@@ -37,6 +36,7 @@ class EletricalPowerSwitch:
         else:
             self.client.turn_on()
             self.on = True
+
 
 if __name__ == "__main__":
     l = LightBulb()
